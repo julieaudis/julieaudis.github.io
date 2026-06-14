@@ -1,37 +1,477 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Stage officiel des pompiers de Morlais</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Julie — Portefolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-	<div id="menu">
-		<h1>Sapeurs pompiers de Morlais</h1>
-		<ul>
-			<li><a href="./pages/centre.html">Le centre</a></li>
-			<li><a href="./pages/stats.html">Les stats </a></li>
-		</ul>
-	</div>
-	
-	<div id="centre">
-		<fieldset>
-		<legend>Comment appeler les pompiers ?</legend>
-		<h2>Composer le 18 ou le 112 (numéro d'urgence européen).</h2>
-		<h2>Composer uniquement ces numéros pour les urgences graves</h2>
-		<h2>Autres numéros d'urgence : 15 samu - 17 police</h2>
-		<h2>En cas de sinistre, indiquer :</h2>
-		<ul>
-			<li class="cligno">La nature du sinistre</li>
-			<li class="cligno">Le lieu</li>
-			<li class="cligno">Le nombre de victimes et leurs états</li>
-		</ul>
-		<center>
-		<!--photographie du centre du secours -->
-		 <img src="./photos/centre.jpg" alt="centre de pompiers" />
-		</center>
-		</fieldset>
-	</div>
-	
+
+<!-- ── NAV ── -->
+<nav>
+  <a class="nav-brand" href="#accueil">
+    <div class="nav-monogram">J</div>
+    <div class="nav-name">
+      Julie Audis
+      <small>BUT Science des Données</small>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#cv">CV</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="accueil">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow" style="color:#D769DB;">Étudiante · Science des Données</div>
+        <h1 class="hero-title">Une histoire se construit<br>au fil des <em>expériences.</em><br>Découvrez la mienne.</h1>
+        <p class="hero-sub" style="color:#9BA8CC;">
+          Je m'appelle Julie Audis, étudiante en BUT Science des Données à l'Université de Poitiers (site de Niort). Curieuse, rigoureuse et passionnée par les nouvelles technologies, je développe mes compétences en analyse de données, statistique et informatique à travers mes études et mes expériences. À travers ce portefolio, je vous invite à découvrir mon parcours, mes projets et les expériences qui ont contribué à façonner mes compétences et mon projet professionnel.
+        </p>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-icon">🎓</div>
+            <div>
+              <div class="hero-stat-label">Formation</div>
+              <div class="hero-stat-value">BUT Science des Données</div>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-icon">📍</div>
+            <div>
+              <div class="hero-stat-label">Lieu</div>
+              <div class="hero-stat-value">Université de Poitiers · Niort</div>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-icon">📅</div>
+            <div>
+              <div class="hero-stat-label">Promotion</div>
+              <div class="hero-stat-value">2025 – 2028</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#projets" class="btn-primary">Voir mes projets →</a>
+          <a href="#cv" class="btn-ghost">Consulter le CV</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="hero-photo-inner">
+          <div class="hero-photo-ring"></div>
+          <img src="photo.png" alt="Julie Audis" class="hero-photo-img"/>
+          <div class="hero-photo-dot hero-photo-dot-1"></div>
+          <div class="hero-photo-dot hero-photo-dot-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COMPÉTENCES ── -->
+<section id="competences">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-label" style="color:#D769DB;">Ce que je maîtrise</div>
+      <h2 class="sec-title">Compétences</h2>
+    </div>
+    <div class="skills-grid" style="grid-template-columns:1fr;">
+
+      <div class="skill-box reveal">
+        <div class="skill-box-title">Langages de programmation</div>
+        <div class="skill-list">
+          <div class="skill-entry">
+            <div class="skill-entry-name">Python</div>
+            <div class="skill-entry-desc">Manipulation et traitement de données avec pandas, visualisations avec matplotlib et seaborn</div>
+          </div>
+          <div class="skill-entry">
+            <div class="skill-entry-name">SQL</div>
+            <div class="skill-entry-desc">Conception de bases relationnelles, requêtes, jointures et vues</div>
+          </div>
+          <div class="skill-entry">
+            <div class="skill-entry-name">R</div>
+            <div class="skill-entry-desc">Analyses statistiques, modélisation et représentations graphiques</div>
+          </div>
+          <div class="skill-entry">
+            <div class="skill-entry-name">SAS</div>
+            <div class="skill-entry-desc">Programmation statistique en environnement professionnel</div>
+          </div>
+          <div class="skill-entry">
+            <div class="skill-entry-name">VBA</div>
+            <div class="skill-entry-desc">Automatisation de tâches et création de macros sous Excel</div>
+          </div>
+          <div class="skill-entry" style="border-bottom:none;padding-bottom:0;margin-bottom:0;">
+            <div class="skill-entry-name">HTML & CSS</div>
+            <div class="skill-entry-desc">Structuration et mise en forme de pages web, à l'image de ce portefolio</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-box reveal" style="transition-delay:0.1s">
+        <div class="skill-box-title">Outils & logiciels</div>
+        <div class="skill-list">
+          <div class="skill-entry">
+            <div class="skill-entry-name">Excel</div>
+            <div class="skill-entry-desc">Tableaux de synthèse, formules avancées, tableaux croisés dynamiques et mise en forme</div>
+          </div>
+          <div class="skill-entry">
+            <div class="skill-entry-name">Power BI</div>
+            <div class="skill-entry-desc">Création de tableaux de bord interactifs pour la restitution d'analyses</div>
+          </div>
+          <div class="skill-entry">
+            <div class="skill-entry-name">MySQL & phpMyAdmin</div>
+            <div class="skill-entry-desc">Création, alimentation et administration de bases de données relationnelles</div>
+          </div>
+          <div class="skill-entry">
+            <div class="skill-entry-name">Sphinx</div>
+            <div class="skill-entry-desc">Conception, diffusion et exploitation de questionnaires d'enquête</div>
+          </div>
+          <div class="skill-entry" style="border-bottom:none;padding-bottom:0;margin-bottom:0;">
+            <div class="skill-entry-name">PowerPoint</div>
+            <div class="skill-entry-desc">Conception de présentations pour restituer des analyses et études</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-box reveal" style="transition-delay:0.15s">
+        <div class="skill-box-title">Langues</div>
+        <div class="skill-row">
+          <div class="skill-row-name">Français</div>
+          <div class="skill-track"><div class="skill-fill" style="width:100%"></div></div>
+          <div class="skill-pct">Natif</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-name">Anglais</div>
+          <div class="skill-track"><div class="skill-fill" style="width:25%"></div></div>
+          <div class="skill-pct">A2</div>
+        </div>
+        <div class="skill-row" style="margin-bottom:0;">
+          <div class="skill-row-name">Espagnol</div>
+          <div class="skill-track"><div class="skill-fill" style="width:25%"></div></div>
+          <div class="skill-pct">A2</div>
+        </div>
+      </div>
+
+      <div class="skill-box reveal" style="transition-delay:0.2s">
+        <div class="skill-box-title">Qualités professionnelles</div>
+        <div class="soft-grid">
+          <span class="soft-chip">Rigueur</span>
+          <span class="soft-chip">Autonomie</span>
+          <span class="soft-chip">Curiosité</span>
+          <span class="soft-chip">Gestion du temps</span>
+          <span class="soft-chip">Travail en équipe</span>
+          <span class="soft-chip">Capacité d'analyse</span>
+          <span class="soft-chip">Adaptabilité</span>
+          <span class="soft-chip">Sens du contact</span>
+          <span class="soft-chip">Communication</span>
+          <span class="soft-chip">Minutie</span>
+          <span class="soft-chip">Organisation</span>
+          <span class="soft-chip">Persévérance</span>
+          <span class="soft-chip">Esprit critique</span>
+          <span class="soft-chip">Patience</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJETS ── -->
+<section id="projets">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-label" style="color:#D769DB;">Mes réalisations</div>
+      <h2 class="sec-title">Projets</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="proj-card reveal">
+        <div class="proj-icon">🗺️</div>
+        <div class="proj-title">Attractivité du littoral atlantique</div>
+        <p class="proj-desc">Analyse de la corrélation entre attractivité migratoire et démographie du littoral atlantique français. Infographie réalisée à partir des données INSEE 2016 et 2022.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">INSEE</span>
+          <span class="proj-tag">Démographie</span>
+          <span class="proj-tag">Dataviz</span>
+        </div>
+        <a href="projet1_dataviz_littoral.pdf" target="_blank" class="proj-btn">Ouvrir le projet →</a>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.07s">
+        <div class="proj-icon">📱</div>
+        <div class="proj-title">Enquête — Les jeunes et les réseaux sociaux</div>
+        <p class="proj-desc">Conception et analyse d'une enquête sur l'usage des réseaux sociaux chez les jeunes : questionnaire Sphinx, organigramme et analyse des résultats.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Sphinx</span>
+          <span class="proj-tag">Enquête</span>
+          <span class="proj-tag">Analyse</span>
+        </div>
+        <a href="projet2_enquete_reseaux.pdf" target="_blank" class="proj-btn">Ouvrir le projet →</a>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.21s">
+        <div class="proj-icon">🐍</div>
+        <div class="proj-title">Gestion des fichiers</div>
+        <p class="proj-desc">Traitement de fichiers JSON vers CSV en Python : lecture, transformation des dates et unités, filtrage des données complètes et export structuré.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">JSON</span>
+          <span class="proj-tag">CSV</span>
+        </div>
+        <a href="projet4_gestion_fichiers.py" download class="proj-btn">🐍 Script Python</a>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.28s">
+        <div class="proj-icon">🔍</div>
+        <div class="proj-title">Analyse exploratoire — Communes à forte natalité</div>
+        <p class="proj-desc">Analyse démographique des trente communes françaises affichant les plus forts taux de natalité en 2022 : pyramide des âges, catégories socioprofessionnelles et taux de chômage.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Analyse</span>
+          <span class="proj-tag">Démographie</span>
+          <span class="proj-tag">Visualisation</span>
+        </div>
+        <a href="projet3_natalite.pdf" target="_blank" class="proj-btn">📄 Ouvrir le rapport</a>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.32s">
+        <div class="proj-icon">📱</div>
+        <div class="proj-title">Le téléphone, une nouvelle drogue</div>
+        <p class="proj-desc">Enquête auprès de 373 étudiants de l'IUT de Niort sur leur rapport au smartphone : temps d'écran, sommeil, concentration et dépendance.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Enquête</span>
+          <span class="proj-tag">Addiction</span>
+          <span class="proj-tag">Analyse</span>
+        </div>
+        <a href="projet4_telephone_addiction.pdf" target="_blank" class="proj-btn">📄 Ouvrir le rapport</a>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.07s">
+        <div class="proj-icon">📊</div>
+        <div class="proj-title">Création d'un reporting</div>
+        <p class="proj-desc">Conception de tableaux Excel dynamiques, automatisation VBA, traitement et analyse des données, et création d'un tableau de bord complet.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Excel</span>
+          <span class="proj-tag">VBA</span>
+          <span class="proj-tag">Dashboard</span>
+        </div>
+        <a href="projet5_creation_reporting.xlsm" download class="proj-btn">📥 Télécharger (Excel)</a>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.14s">
+        <div class="proj-icon">📈</div>
+        <div class="proj-title">Reporting & Datavisualisation avec R</div>
+        <p class="proj-desc">Analyse des données Parcoursup 2025 sur les formations BUT avec R : domaines, taux d'accès, disparités géographiques et profils des admis.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">R</span>
+          <span class="proj-tag">Dataviz</span>
+          <span class="proj-tag">Reporting</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">
+          <a href="projet6_reporting_R.pdf" target="_blank" class="proj-btn">📄 Compte rendu</a>
+          <a href="projet6_reporting_R.R" download class="proj-btn">💾 Code R</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.21s">
+        <div class="proj-icon">💻</div>
+        <div class="proj-title">SAÉ — Analyse, reporting et datavisualisation</div>
+        <p class="proj-desc">SAÉ complète combinant analyse de données, reporting structuré et datavisualisation. Comprend le classeur Excel "Laboratoire Qualyse" avec macros, ainsi qu'un tableau de bord interactif Power BI.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Excel</span>
+          <span class="proj-tag">Power BI</span>
+          <span class="proj-tag">Datavisualisation</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">
+          <a href="projet7_analyse_reporting_dataviz.xlsm" download class="proj-btn">📥 Fichier Excel (.xlsm)</a>
+          <a href="projet7_analyse_reporting_dataviz.pbix" download class="proj-btn">📊 Fichier Power BI (.pbix)</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.28s">
+        <div class="proj-icon">🗄️</div>
+        <div class="proj-title">Conception & implémentation d'une base de données</div>
+        <p class="proj-desc">Modélisation et implémentation d'une base de données relationnelle pour une entreprise de livraison écologique (GreenSD). MCD, scripts SQL, requêtes avancées, vues et interface Python.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">SQL</span>
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">MCD</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">
+          <a href="projet9_bdd.loo" download class="proj-btn">📐 MCD (.loo)</a>
+          <a href="projet9_bdd_create.sql" download class="proj-btn">🗃️ Create SQL</a>
+          <a href="projet9_bdd_insert.sql" download class="proj-btn">📥 Insert SQL</a>
+          <a href="projet9_bdd_requetes.sql" download class="proj-btn">🔍 Requêtes SQL</a>
+          <a href="projet9_bdd_final.sql" download class="proj-btn">✅ Final SQL</a>
+          <a href="projet9_bdd_ihm.py" download class="proj-btn">🐍 IHM Python</a>
+          <a href="projet9_bdd_extraction.py" download class="proj-btn">🐍 Extraction Python</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.35s">
+        <div class="proj-icon">📐</div>
+        <div class="proj-title">Échantillonnage et estimation</div>
+        <p class="proj-desc">Estimation de la population de Nouvelle-Aquitaine par échantillonnage aléatoire simple et stratifié en R. Tests du khi-deux sur données d'enquête.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">R</span>
+          <span class="proj-tag">Statistiques</span>
+          <span class="proj-tag">Échantillonnage</span>
+        </div>
+        <a href="projet10_echantillonnage.pdf" target="_blank" class="proj-btn">📄 Ouvrir le rapport</a>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.07s">
+        <div class="proj-icon">🗺️</div>
+        <div class="proj-title">SAÉ Territoire</div>
+        <p class="proj-desc">Analyse territoriale présentée sous forme de diaporama. Étude des dynamiques d'un territoire à partir de données statistiques et géographiques.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">PowerPoint</span>
+          <span class="proj-tag">Territoire</span>
+          <span class="proj-tag">Analyse</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">
+          <a href="projet11_territoire.pdf" target="_blank" class="proj-btn">📄 Voir le PDF</a>
+          <a href="projet11_territoire.pptx" download class="proj-btn">📊 Télécharger (.pptx)</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" style="transition-delay:.14s">
+        <div class="proj-icon">🏠</div>
+        <div class="proj-title">Régression sur données réelles</div>
+        <p class="proj-desc">Modèle prédictif des prix immobiliers dans les Deux-Sèvres (2025) via régression log-log en R. Segmentation par type de bien et code postal.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">R</span>
+          <span class="proj-tag">Régression</span>
+          <span class="proj-tag">Immobilier</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">
+          <a href="projet8_regression.pdf" target="_blank" class="proj-btn">📄 Rapport</a>
+          <a href="projet8_regression.R" download class="proj-btn">💾 Script R</a>
+          <a href="projet8_train.csv" download class="proj-btn">📊 Train.csv</a>
+          <a href="projet8_prediction.csv" download class="proj-btn">📊 Prédictions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PARCOURS ── -->
+<section id="parcours">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-label" style="color:#D769DB;">Mon histoire</div>
+      <h2 class="sec-title">Parcours</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2025 – 2028</div>
+        <div class="tl-title">BUT Science des Données</div>
+        <div class="tl-place" style="color:#9C51C1;">Université de Poitiers · Site de Niort</div>
+        <p class="tl-body">Après un baccalauréat à dominante scientifique, j'ai intégré le BUT Science des Données à l'Université de Poitiers, site de Niort. Sur trois ans, cette formation me permet d'acquérir progressivement des outils d'analyse variés — Python, R, SQL, SAS — tout en développant une véritable culture statistique. Chaque semestre s'appuie sur des projets concrets qui me permettent de mettre directement en pratique les notions abordées en cours.</p>
+      </div>
+      <div class="tl-item reveal" style="transition-delay:.1s">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2022 – 2025</div>
+        <div class="tl-title">Baccalauréat Général</div>
+        <div class="tl-place" style="color:#9C51C1;">Spécialités Mathématiques & Numérique et Sciences Informatiques</div>
+        <p class="tl-body">J'ai obtenu un baccalauréat général en choisissant les spécialités Mathématiques et Numérique & Sciences Informatiques, avec Sciences de la Vie et de la Terre en Première. Ce parcours m'a permis de développer un raisonnement logique et structuré, ainsi qu'un véritable goût pour l'algorithmique et le calcul, des bases qui orientent encore aujourd'hui ma manière d'aborder les problèmes.</p>
+      </div>
+      <div class="tl-item reveal" style="transition-delay:.2s">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Été 2025</div>
+        <div class="tl-title">Hôtesse de caisse</div>
+        <div class="tl-place" style="color:#9C51C1;">Super U · Magné (79460)</div>
+        <p class="tl-body">Cette première expérience professionnelle m'a confrontée à un rythme de travail soutenu et à des responsabilités concrètes : encaissement, relation client, mise en rayon, gestion du tiroir-caisse et édition des factures. Au contact quotidien de la clientèle, j'y ai gagné en aisance à l'oral, en sens du contact et en capacité à m'adapter rapidement à des situations imprévues.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CV ── -->
+<section id="cv">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-label" style="color:#D769DB;">Document professionnel</div>
+      <h2 class="sec-title">Mon CV</h2>
+    </div>
+
+    <div class="reveal" style="max-width:900px;margin:0 auto;">
+      <div style="border:1px solid rgba(151,81,193,0.3);border-radius:18px;overflow:hidden;box-shadow:0 20px 60px rgba(151,81,193,0.15);">
+        <object 
+          data="julie-audis-cv.pdf" 
+          type="application/pdf"
+          width="100%" 
+          height="1150px"
+          style="display:block;border:none;">
+          <div style="padding:40px;text-align:center;background:white;color:#333;">
+            <p style="margin-bottom:16px;">Votre navigateur ne peut pas afficher le PDF directement.</p>
+            <a href="julie-audis-cv.pdf" target="_blank" style="color:#643C9E;font-weight:600;">Ouvrir le CV dans un nouvel onglet →</a>
+          </div>
+        </object>
+        <div style="padding:16px 24px;background:#0D1E42;display:flex;justify-content:flex-end;border-top:1px solid rgba(151,81,193,0.2);">
+          <a href="julie-audis-cv.pdf" target="_blank" class="btn-ghost" style="font-size:0.85rem;padding:12px 26px;margin-right:10px;">Ouvrir →</a>
+          <a href="julie-audis-cv.pdf" download="CV_Julie_Audis.pdf" class="btn-primary" style="font-size:0.85rem;padding:12px 26px;">📥 Télécharger</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>Portefolio · <a href="mailto:julie.audis@orange.fr" style="color:#D769DB;">julie.audis@orange.fr</a></p>
+</footer>
+
+<script>
+  function showSection(id) {
+    // Hide all sections
+    document.querySelectorAll('section[id]').forEach(s => s.classList.remove('active-section'));
+    // Show target
+    const target = document.getElementById(id);
+    if (target) {
+      target.classList.add('active-section');
+      // Trigger reveal animations
+      target.querySelectorAll('.reveal').forEach(el => {
+        el.classList.remove('visible');
+        setTimeout(() => el.classList.add('visible'), 60);
+      });
+    }
+    // Update nav links
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      const isActive = a.getAttribute('href') === '#' + id;
+      a.style.color = isActive ? 'var(--p600)' : '';
+      a.style.fontWeight = isActive ? '600' : '';
+    });
+    // Scroll to top
+    window.scrollTo(0, 0);
+  }
+
+  // Intercept nav link clicks
+  document.querySelectorAll('.nav-links a, .hero-ctas a').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        showSection(href.slice(1));
+      }
+    });
+  });
+
+  // Show accueil on load
+  showSection('accueil');
+</script>
 </body>
 </html>
