@@ -142,6 +142,10 @@
       pointer-events: none;
     }
 
+    #accueil .container {
+      padding: 0 24px;
+    }
+
     .hero-grid {
       display: grid;
       grid-template-columns: 1fr 320px;
@@ -614,6 +618,45 @@
 
     /* ── PARCOURS ── */
     #parcours { background: #071025; }
+
+    /* ── BILAN ── */
+    #bilan { background: #0D1E42; }
+
+    .bilan-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .bilan-quote {
+      font-family: 'Playfair Display', serif;
+      font-size: 6rem;
+      line-height: 1;
+      color: #9C51C1;
+      opacity: 0.5;
+      margin-bottom: -2.2rem;
+      font-style: italic;
+    }
+
+    .bilan-text {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: #C5CBE8;
+      margin-bottom: 24px;
+    }
+
+    .bilan-highlight {
+      margin-top: 36px;
+      padding: 28px 32px;
+      background: rgba(151,81,193,0.1);
+      border-left: 3px solid #D769DB;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .bilan-highlight .bilan-text {
+      color: #F0EEFF;
+      font-style: italic;
+    }
 
     .timeline {
       position: relative;
