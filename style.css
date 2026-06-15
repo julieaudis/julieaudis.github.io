@@ -534,6 +534,58 @@
       border-radius: 999px;
     }
 
+    /* ── GALERIE SPORT ── */
+    .sport-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .sport-row.reverse .sport-row-img { order: 2; }
+    .sport-row.reverse .sport-row-text { order: 1; }
+
+    .sport-row-img img {
+      display: block;
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid rgba(151,81,193,0.25);
+      box-shadow: 0 20px 60px rgba(100,60,158,0.1);
+    }
+
+    .sport-row-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #F0EEFF;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sport-row-title svg {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      stroke: #D769DB;
+    }
+
+    @media (max-width: 800px) {
+      .sport-row, .sport-row.reverse {
+        grid-template-columns: 1fr;
+      }
+      .sport-row.reverse .sport-row-img,
+      .sport-row.reverse .sport-row-text,
+      .sport-row .sport-row-img,
+      .sport-row .sport-row-text {
+        order: initial;
+      }
+      .sport-row-img img { height: 240px; }
+    }
+
     /* ── PROJETS ── */
     #projets { background: #071025; }
 
